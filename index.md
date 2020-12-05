@@ -9,7 +9,7 @@ This is my personal page for information about my projects stored on [GitHub](ht
 Helps to split a school grade in multiple groups for smaller coursese during corona times. 
 Designed to run in any browser. Can be installed on filesystem and loaded locally.
 
-Latest release always [available here as GitHub Page[](https://klauscall.github.io/SchoolSplitter/)
+Latest release always [available here as GitHub Page](https://klauscall.github.io/SchoolSplitter/)
 
 
 # About me
