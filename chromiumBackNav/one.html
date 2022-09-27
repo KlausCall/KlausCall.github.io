@@ -1,0 +1,18 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Chromium unexpected back navigation - Start Page</title>
+    </head>
+    <body>
+        <h1>Chromium unexpected back navigation</h1>
+        <hr/>
+        <h2> Start Page </h2>
+        <p>Use this page on Android within Chrome</p>
+        <p>Just <a href="two.html">navigate to next page</a> .</p>
+        <p>Next page will show up for 5 seconds and auto navigate to a mailto: URL. Chrome on Android will navigate back to this page while on other OS or browser we stay on the second page.</p>
+        <p>Navigation can also be triggered by a POST request:</p>
+        <form name="startFlow" action="two.html" method="GET" novalidate="novalidate" accept-charset="UTF-8" >
+            <button type="submit">Navigate by POST</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Chromium unexpected back navigation - Succes Page</title>
+        
+        <script>
+        
+            function autoNavigate() {
+                console.log('auto navigate to external link');
+                window.location = "mailto:test@example.com";
+                // could also be done by submitting a form which answers 
+                // with 302 redirect to an URL not handled by Chromium 
+                // document.getElementById("navigateForm").submit();
+                // unfortunately I can't trigger 302 with github pages
+            }
+            
+            window.onload = (event) => {
+                console.log('schedule auto navigate');
+                window.setTimeout(autoNavigate, 5000);
+            };
+        </script>
+        
+    </head>
+    <body>
+        <h1>Chromium unexpected back navigation</h1>
+        <hr/>
+        <h2>Second Page</h2>
+        <p>you will be auto forwarded to Mail within 5 seconds</p>
+        <h3>Chrome on Android will navigate back to Start Page but others stay here.</h3>
+        <form id="navigateForm" name="loginSuccess" action="redirectLink" method="POST" novalidate="novalidate" accept-charset="UTF-8" >
+            <button type="submit" style="display:none">Continue</button>
+        </form>
+    </body>
+</html>
